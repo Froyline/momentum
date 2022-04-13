@@ -1,14 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Momentum</title>
-</head>
-<body>
-    <header></header>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+			<div class="container">
+				<nav class="navbar">
+					<div class="logo"><img src="/assets/img/logo.png" alt="Momentum logo"></div>
+					<div class="navbar--menu">
+						<ul class="menu--list">
+							<li class="menu--list-item"><a href="#">link</a></li>
+							<li class="menu--list-item"><a href="#">link</a></li>
+							<li class="menu--list-item"><a href="#">link</a></li>
+						</ul>
+						<button class="navbar--menu-btn">Contact us</button>
+					</div>
+					<div class="navbar--menu-mobile">
+						<ul class="menu--list">
+							<li class="menu--list-item"><a href="#">link</a></li>
+							<li class="menu--list-item"><a href="#">link</a></li>
+							<li class="menu--list-item"><a href="#">link</a></li>
+						</ul>
+						<button class="navbar--menu-btn">Contact us</button>
+					</div>
+					<div class="hamburger"></div>
+				</nav>
+				<div class="header--content">
+					<div class="header--left">
+						<h1 class="header--title">Web App and ChatBot<br>Development Company</h1>
+						<p class="header--text">Appvales is a software development partner that helps you design, build, test, and deploy web and mobile applications. We can handle end-to-end product development or collaborate with your product team with dedicated engineers.</p>
+						<div class="header--btn-wrapper">
+							<button class="header-btn"><img src="/assets/img/figma.svg" alt="figma logo icon"> Web</button>
+							<button class="header-btn"><img src="/assets/img/figma.svg" alt="figma logo icon"> Bots</button>
+							<button class="header-btn"><img src="/assets/img/figma.svg" alt="figma logo icon"> Design</button>
+						</div>
+					</div>
+					<div class="header-right">
+						<img src="/assets/img/Chatbot01.png" alt="">
+						<img src="/assets/img/Chatbot02.png" alt="">
+						<img src="/assets/img/Chatbot03.png" alt="">
+					</div>
+				</div>
+			</div>
+    </header>
+    <main>
+			<section id="clients">
+				<h2 class="section--title">Our clients love us</h2>
+				<div class="clients--cards-wrapper">
+					<div class="clients--card">
+						<p class="clients--card-text">Hiring Appvales was one of our best business decisions. These guys were honest from the start in terms of time of development and costs. They delivered what they promised in time. Appvales cares about the success of your project and they will go above and beyond to deliver. These guys were honest from the start in terms of time of development and costs. They delivered what they promised in time. Highly recommended company. Thanks guys!</p>
+						<div class="clients--card-info wrapper">
+							<div class="clients--card-img"><img src="" alt=""></div>
+							<div class="clients--card-info">
+								<p class="clients--card-info name">Alexandre Giguere</p>
+								<p class="clients--card-info work">Founder @ Salu Video</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</section>
+			<section id="case">
+				<h2 class="section--title">Bot Case Studies</h2>
+				<div class="case--cards-wrapper">
+					<div class="case--card">
+						<img src="/assets/img/case.png" alt="case card img" class="case--card-img">
+						<h3 class="case--card-title">LUN bot for air quality monitoring</h3>
+						<p class="case-card--industry"><strong>Industry:</strong> Tools, Weather</p>
+						<p class="case--card-text">Chatbot for Viber, where you can find out the air quality in your area, subscribe to messages about poor air quality. The LUN City Air proj...</p>
+						<div class="case--card-stack">
+							<ul class="case--card--stack-list">
+								<li>Python</li>
+								<li>Django</li>
+								<li>PostgreSQL</li>
+							</ul>
+						</div>
+						<a href="#" class="case--card-btn">Follow project<img src="/assets/img/telegram.svg" alt="telegram icon"></a>
+					</div>
+					<button class="case--cards-btn view">View All</button>
+				</div>
+				<h2 class="section--title">Web Case Studies</h2>
+				<div class="case--cards-wrapper">
+					<div class="case--card">
+						<img src="/assets/img/case.png" alt="case card img" class="case--card-img">
+						<h3 class="case--card-title">LUN bot for air quality monitoring</h3>
+						<p class="case-card--industry"><strong>Industry:</strong> Tools, Weather</p>
+						<p class="case--card-text">Chatbot for Viber, where you can find out the air quality in your area, subscribe to messages about poor air quality. The LUN City Air proj...</p>
+						<div class="case--card-stack">
+							<ul class="case--card--stack-list">
+								<li>Python</li>
+								<li>Django</li>
+								<li>PostgreSQL</li>
+							</ul>
+						</div>
+						<a href="#" class="case--card-btn">Follow project<img src="/assets/img/telegram.svg" alt="telegram icon"></a>
+					</div>
+					<button class="case--cards-btn view">View All</button>
+				</div>
+			</section>
+			<section id="services">
+				<h2 class="section--title">Services</h2>
+				<div class="service--cards-wrapper">
+					<div class="service--card">
+						<h3 class="service--card-title">Bot Development</h3>
+						<img src="/assets/img/robot.svg" alt="robot image icon" class="service--card-img">
+						<p class="service--card-text">We have gained over time in the development of Telegram, Viber.</p>
+					</div>
+					<div class="service--card">
+						<h3 class="service--card-title">Web Development</h3>
+						<img src="/assets/img/web-development-2.svg" alt="robot image icon" class="service--card-img">
+						<p class="service--card-text">We have gained over time in the development of Telegram, Viber.</p>
+					</div>
+					<div class="service--card">
+						<h3 class="service--card-title">Design Development</h3>
+						<img src="/assets/img/web-development.svg" alt="robot image icon" class="service--card-img">
+						<p class="service--card-text">We have gained over time in the development of Telegram, Viber.</p>
+					</div>
+					<div class="service--card">
+						<h3 class="service--card-title">Bot Development</h3>
+						<img src="/assets/img/robot.svg" alt="robot image icon" class="service--card-img">
+						<p class="service--card-text">We have gained over time in the development of Telegram, Viber.</p>
+					</div>
+				</div>
+			</section>
+			<section id="stack">
+				<h2 class="section--title">Our tech stack</h2>
+				<div class="stack-wrapper">
+					<div class="stack--cards">
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+						<div class="stack--card">
+							<img src="/assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+							<p class="stack--card-title">React</p>
+						</div>
+					</div>
+					<div class="stack-img"><img src="/assets/img/app_development-2.svg" alt=""></div>
+				</div>
+			</section>
+			<section class="articles">
+				<h2 class="section--title">Articles</h2>
+				<div class="arcticle--cards-wrapper">
+					<div class="article-card">
+						<img src="/assets/img/article.jpg" alt="someone hand typing on notebooke" class="article--card-img">
+						<h3 class="article--card-title">Integration of payment system in telegram bot</h3>
+						<p class="article--card-info"><strong>Author:</strong> Stepan Bandera, 17 Apr 2022</p>
+						<p class="article--card-excerpt">Chatbot for Viber, where you can find out the air quality in your area, subscribe to messages about poor air quality. The LUN City Air project to messages about poor air...</p>
+					</div>
+					<button class="article-btn">View All</button>
+				</div>
+			</section>
+			<section class="contact">
+				<div class="contact--wrapper">
+					<div class="contact-img"><img src="/assets/img/app_development.svg" alt=""></div>
+					<div class="contact--form-wrapper">
+						<h2 class="contact--form-title"></h2>
+						<p class="contact--form-subtitle"></p>
+						<form action="" id="contact">
+							<div class="input-name"><input type="text" name="name" id="name" required ><label for="name">Your name</label></div>
+							<div class="input-mail"><input type="email" name="email" id="email" required ><label for="email">Your email</label></div>
+							<div class="input-wrapper">
+								<div class="input-text">
+									<textarea name="text" id="text" cols="30" rows="10"></textarea><label for="text">Describe your project</label>
+								</div>
+								<div class="input-fileUpload"><input type="file" name="file" id="file"><img src="/assets/img/clip.png" alt=""></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+    </main>
+    <footer>
+			<div class="footer-wrapper">
+				<div class="conatact--info">
+					<address>
+						<ul class="contact--info-list">
+							<li>Phone</li>
+							<li>Email</li>
+							<li>Adress</li>
+						</ul>
+					</address>
+					<img src="" alt="momentum logo" class="footer-logo">
+				</div>
+				<div class="product--links">
+					<ul class="product--link-list">
+						<li><a href="#">Product Discovery</a></li>
+						<li><a href="#">Product Design</a></li>
+						<li><a href="#">Product Scaling</a></li>
+						<li><a href="#">Apps for Business</a></li>
+					</ul>
+				</div>
+				<div class="footer--menu">
+					<ul class="footer--menu-list">
+						<li><a href="#">Tech stack</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="social--links">
+					<ul class="social--links-list">
+						<li><a href="#"><img src="" alt="viber logo icon"></a></li>
+						<li><a href="#"><img src="" alt="telegram logo icon"></a></li>
+						<li><a href="#"><img src="" alt="facebook logo icon"></a></li>
+						<li><a href="#"><img src="" alt="linkedIn logo icon"></a></li>
+					</ul>
+				</div>
+			</div>
+    </footer>
+  </body>
 </html>
