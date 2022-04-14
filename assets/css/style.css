@@ -463,11 +463,13 @@ h2.section--title {
   margin-left: 12px;
 }
 
-.case--cards-btn.view {
+.case--cards-btn.view,
+.article-btn {
   width: 100%;
   max-width: 183px;
   height: 50px;
   margin-top: 40px;
+  margin-bottom: 60px;
   border: none;
   border-radius: 12px;
   background: var(--SlateBlue);
@@ -593,6 +595,220 @@ h2.section--title {
 .stack-img img {
   width: 100%;
 }
+
+.arcticle--cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  width: 31%;
+  max-width: 300px;
+  padding: 20px;
+  margin-right: 30px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+img.article--card-img {
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.article--card-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.article--card-info {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.article--card-info strong {
+  font-size: 14px;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact--wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contact--form-wrapper {
+  width: 498px;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: var(--White);
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+h2.contact--form-title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+
+section.contact {
+  padding: 60px 0;
+  background: -o-linear-gradient(45deg, black, transparent);
+  background: linear-gradient(45deg, black, transparent);
+}
+
+.contact--form-subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+form#contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+}
+
+.input-name,
+.input-text,
+.input-mail {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--DimGrey);
+}
+
+.input-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-fileUpload {
+  width: 10%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+}
+
+label {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: var(--DimGrey);
+}
+
+#text {
+  width: 102%;
+  max-width: 397px;
+  height: 100px;
+  border-radius: 12px;
+}
+
+.input-text {
+  width: 90%;
+}
+
+.input-text label {
+  top: 15px;
+}
+
+#file {
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  border-radius: 50%;
+  position: absolute;
+  border: none;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+input#file:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url(/assets/img/clip.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 69%;
+  background-color: var(--LavanderLightBlue);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 0;
+}
+
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.contact--info-list {
+  font-style: normal;
+}
+
+.contact--info-list li,
+.social--links-list li,
+.footer--menu-list li,
+.product--link-list li {
+  margin-bottom: 10px;
+}
+
 
 
 .navbar--menu-mobile {
