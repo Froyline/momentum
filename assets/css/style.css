@@ -809,7 +809,19 @@ input#file:after {
   margin-bottom: 10px;
 }
 
-
+#submit {
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  color: var(--White);
+  background: var(--SlateBlue);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  cursor: pointer;
+}
 
 .navbar--menu-mobile {
   display: none;
