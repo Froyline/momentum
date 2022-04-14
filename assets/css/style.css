@@ -673,8 +673,8 @@ h2.contact--form-title {
 
 section.contact {
   padding: 60px 0;
-  background: -o-linear-gradient(45deg, black, transparent);
-  background: linear-gradient(45deg, black, transparent);
+  background: -o-linear-gradient(30deg, #5e56e954, transparent);
+  background: linear-gradient(30deg, #5e56e954, transparent);
 }
 
 .contact--form-subtitle {
@@ -774,12 +774,12 @@ label {
 
 input#file:after {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   background: url(/assets/img/clip.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 69%;
+  background-size: 70%;
   background-color: var(--LavanderLightBlue);
   border-radius: 50%;
   display: block;
@@ -794,8 +794,8 @@ input#file:after {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
-  padding: 60px;
+  justify-content: space-between;
+  padding: 60px 0;
 }
 
 .contact--info-list {
