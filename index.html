@@ -13,22 +13,26 @@
     <header class="header">
 			<div class="container">
 				<nav class="navbar">
-					<div class="logo"><img src="assets/img/logo.png" alt="Momentum logo"></div>
+					<div class="logo"><a href="/"><img src="assets/img/logo.svg" alt="Momentum logo"></a></div>
 					<div class="navbar--menu">
 						<ul class="menu--list">
-							<li class="menu--list-item"><a href="#">link</a></li>
-							<li class="menu--list-item"><a href="#">link</a></li>
-							<li class="menu--list-item"><a href="#">link</a></li>
+							<li class="menu--list-item"><a href="#services">Services</a></li>
+							<li class="menu--list-item"><a href="#case">Cases</a></li>
+							<li class="menu--list-item"><a href="#stack">Tech stack</a></li>
+							<li class="menu--list-item"><a href="#">Company</a></li>
+							<li class="menu--list-item"><a href="#">Blog</a></li>
 						</ul>
-						<button class="navbar--menu-btn">Contact us</button>
+						<a href="#contact" class="navbar--menu-btn">Contact us</a>
 					</div>
 					<div class="navbar--menu-mobile">
 						<ul class="menu--list">
-							<li class="menu--list-item"><a href="#">link</a></li>
-							<li class="menu--list-item"><a href="#">link</a></li>
-							<li class="menu--list-item"><a href="#">link</a></li>
+							<li class="menu--list-item"><a href="#services">Services</a></li>
+							<li class="menu--list-item"><a href="#case">Cases</a></li>
+							<li class="menu--list-item"><a href="#stack">Tech stack</a></li>
+							<li class="menu--list-item"><a href="#">Company</a></li>
+							<li class="menu--list-item"><a href="#">Blog</a></li>
 						</ul>
-						<button class="navbar--menu-btn">Contact us</button>
+						<a href="#contact" class="navbar--menu-btn">Contact us</a>
 					</div>
 					<div class="hamburger"></div>
 				</nav>
@@ -36,10 +40,11 @@
 					<div class="header--left">
 						<h1 class="header--title">Web App and ChatBot<br>Development Company</h1>
 						<p class="header--text">Appvales is a software development partner that helps you design, build, test, and deploy web and mobile applications. We can handle end-to-end product development or collaborate with your product team with dedicated engineers.</p>
+						<a href="#contact" class="header--content-btn">Start a Project <img src="assets/img/arrow-right.svg" alt="arrow icon"></a>
 						<div class="header--btn-wrapper">
-							<button class="header-btn"><img src="assets/img/figma.svg" alt="figma logo icon"> Web</button>
-							<button class="header-btn"><img src="assets/img/figma.svg" alt="figma logo icon"> Bots</button>
-							<button class="header-btn"><img src="assets/img/figma.svg" alt="figma logo icon"> Design</button>
+							<button class="header-btn"><img src="assets/img/browser-svg.svg" alt="browser icon image"> Web apps</button>
+							<button class="header-btn"><img src="assets/img/robot-btn.svg" alt="robot icon"> Chatbot</button>
+							<button class="header-btn"><img src="assets/img/palette.svg" alt="palette icon"> Web design</button>
 						</div>
 					</div>
 					<div class="header-right">
@@ -218,7 +223,11 @@
 						<div class="stack-wrapper">
 							<div class="stack--cards">
 								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+									<img src="assets/img/js.svg" alt="java script icon image" class="stack--card-img">
+									<p class="stack--card-title">React</p>
+								</div>
+								<div class="stack--card">
+									<img src="assets/img/ts.svg" alt="type script icon image" class="stack--card-img">
 									<p class="stack--card-title">React</p>
 								</div>
 								<div class="stack--card">
@@ -226,31 +235,27 @@
 									<p class="stack--card-title">React</p>
 								</div>
 								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+									<img src="assets/img/python.svg" alt="python icon image" class="stack--card-img">
 									<p class="stack--card-title">React</p>
 								</div>
 								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+									<img src="assets/img/postgresql.svg" alt="postgresql icon image" class="stack--card-img">
 									<p class="stack--card-title">React</p>
 								</div>
 								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+									<img src="assets/img/redis.svg" alt="redis icon image" class="stack--card-img">
 									<p class="stack--card-title">React</p>
 								</div>
 								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+									<img src="assets/img/docker.svg" alt="docker icon image" class="stack--card-img">
 									<p class="stack--card-title">React</p>
 								</div>
 								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+									<img src="assets/img/aws.svg" alt="amazon web services icon image" class="stack--card-img">
 									<p class="stack--card-title">React</p>
 								</div>
 								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
-									<p class="stack--card-title">React</p>
-								</div>
-								<div class="stack--card">
-									<img src="assets/img/reactsvg.svg" alt="react icon image" class="stack--card-img">
+									<img src="assets/img/mongo.svg" alt="mongoDb icon image" class="stack--card-img">
 									<p class="stack--card-title">React</p>
 								</div>
 							</div>
@@ -284,7 +289,7 @@
 						</div>
 					</div>
 			</section>
-			<section class="contact">
+			<section id="contact" class="contact">
 					<div class="container">
 						<div class="contact--wrapper">
 							<div class="contact-img"><img src="assets/img/app_development.svg" width="576" height="360" loading="lazy" alt="man looking at phone with loupe and processor"></div>
@@ -313,35 +318,37 @@
 					<div class="conatact--info">
 						<address>
 							<ul class="contact--info-list">
-								<li>Phone</li>
-								<li>Email</li>
-								<li>Adress</li>
+								<li><h5>Contacts</h5></li>
+								<li><a href="tel:+380112233445">+380112233445</a></li>
+								<li><a href="mailto:momentumsquads@gmail.com">momentumsquads@gmail.com</a></li>
+								<li>Kyiv, Ukraine 02000</li>
 							</ul>
 						</address>
-						<img src="" alt="momentum logo" class="footer-logo">
+						<img src="assets/img/logo.svg" alt="momentum logo" class="footer-logo">
 					</div>
 					<div class="product--links">
 						<ul class="product--link-list">
-							<li><a href="#">Product Discovery</a></li>
-							<li><a href="#">Product Design</a></li>
-							<li><a href="#">Product Scaling</a></li>
-							<li><a href="#">Apps for Business</a></li>
+							<li><h5>Momentum Squads</h5></li>
+							<li><a href="#">Cases</a></li>
+							<li><a href="#">Tech stack</a></li>
+							<li><a href="#">Company</a></li>
+							<li><a href="#">Blog</a></li>
 						</ul>
 					</div>
 					<div class="footer--menu">
 						<ul class="footer--menu-list">
-							<li><a href="#">Tech stack</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><h5>Services</h5></li>
+							<li><a href="#">Web development</a></li>
+							<li><a href="#">Chatbot development</a></li>
+							<li><a href="#">Web Designing</a></li>
 						</ul>
 					</div>
 					<div class="social--links">
 						<ul class="social--links-list">
-							<li><a href="#"><img src="" alt="viber logo icon"></a></li>
-							<li><a href="#"><img src="" alt="telegram logo icon"></a></li>
-							<li><a href="#"><img src="" alt="facebook logo icon"></a></li>
-							<li><a href="#"><img src="" alt="linkedIn logo icon"></a></li>
+							<li><h5>Partners</h5></li>
+							<li>Momentum bots</li>
+							<li>GoAndChill</li>
+							<li>Urlink</li>
 						</ul>
 					</div>
 				</div>
