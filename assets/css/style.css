@@ -787,14 +787,16 @@ h2.contact--form-title {
   margin-bottom: 10px;
 }
 
-.contact {
-  padding: 60px 0;
+footer{
+  padding-top: 60px;
   background: url(/assets/img/contact-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: center;
 }
-
+#contact {
+  margin-bottom: 60px;
+}
 .contact--form-subtitle {
   font-family: 'Open Sans';
   font-style: normal;
@@ -914,7 +916,7 @@ input#file:after {
   -ms-flex-pack: distribute;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  padding: 60px 0;
+  padding: 30px 0 60px;
 }
 
 .contact--info-list {
@@ -958,7 +960,9 @@ input#file:after {
 .hamburger {
   display: none;
 }
-
+.divider {
+  border-bottom: 0.5px solid var(--DimGrey);
+}
 @media (max-width:768px) {
   .header {
     background: url(/assets/img/main-mob-bg.png);
@@ -1052,6 +1056,7 @@ input#file:after {
   .contact-img,
   .contact-img img {
     width: 100%;
+    display: none;
   }
   .hamburger:after {
     content: "";
