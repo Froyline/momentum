@@ -142,6 +142,62 @@ a {
   font-family: 'Open Sans', sans-serif;
   cursor: pointer;
 }
+.lang--menu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.lang {
+  position: relative;
+  cursor: pointer;
+}
+.lang li {
+  position: relative;
+}
+.lang--dropdown-list {
+  opacity: 0;
+  display: none;
+  transition: all 0.2s ease;
+}
+.lang.lang--dropdown:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: -15px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--Black);
+  border-right: 2px solid var(--Black);
+  transform: rotateZ(135deg);
+  transition:all 0.2s ease;
+}
+.lang--dropdown-list.show.show {
+  opacity: 1;
+  display: block;
+  position: absolute;
+}
+.lang.lang--dropdown.show:after {
+  top: 10px;
+  right: -16px;
+  transform: rotateZ(315deg);
+}
+.lang--dropdown-list div {
+  width: 100%;
+}
+.lang--dropdown--list-item a {
+  color: var(--Black);
+  position: absolute;
+  right: -1px;
+  top: -3px;
+  z-index: 4;
+}
+
 
 .header {
   overflow: hidden;
@@ -194,7 +250,7 @@ a {
 }
 
 .header--btn-wrapper {
-  width: 500px;
+  width: 550px;
   max-width: 100%;
   margin-top: 168px;
   display: -webkit-box;
@@ -311,10 +367,10 @@ a {
 .clients--card {
   width: 362px;
   max-width: 100%;
-  height: 100%;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  max-height: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   border-radius: 12px;
   margin-right: 30px;
   margin-bottom: 20px;
@@ -421,6 +477,7 @@ h2.section--title {
 }
 
 .case--card-img {
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -512,6 +569,7 @@ h2.section--title {
   font-size: 20px;
   line-height: 27px;
   word-spacing: -2px;
+  margin: 0 auto;
 }
 
 .case--card-btn img {
@@ -535,7 +593,7 @@ h2.section--title {
   font-size: 20px;
   line-height: 27px;
   text-align: center;
-  padding: 12px 53px;
+  padding: 12px 50px;
   cursor: pointer;
 }
 
@@ -613,10 +671,8 @@ h2.section--title {
 }
 
 .stack--card {
-  width: 140px;
-  max-width: 100%;
-  height: 120px;
-  max-height: 100%;
+  width: 100%;
+  min-height: 120px;
   border-radius: 12px;
   margin-right: 30px;
   -webkit-box-shadow: var(--boxShadow);
@@ -809,8 +865,8 @@ label {
 }
 
 #text {
-  width: 102%;
-  max-width: 397px;
+  width: 99%;
+  max-width: 394px;
   height: 100px;
   border-radius: 12px;
 }
@@ -864,7 +920,12 @@ input#file:after {
 .contact--info-list {
   font-style: normal;
 }
-
+.contact--info-list img {margin-right: 10px;}
+.contact--info-list li a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
 .contact--info-list li,
 .social--links-list li,
 .footer--menu-list li,
@@ -899,6 +960,12 @@ input#file:after {
 }
 
 @media (max-width:768px) {
+  .header {
+    background: url(/assets/img/main-mob-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   .navbar--menu {
     display: none;
   }
@@ -915,6 +982,13 @@ input#file:after {
     grid-template-columns: 1fr;
     row-gap: 20px
   }
+  .clients--card {
+    width: 100%;
+    align-self: center;
+}
+.service--card {
+  margin: 15px 0;
+}
   .case--cards-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -924,8 +998,12 @@ input#file:after {
     -ms-flex-align: center;
     align-items: center;
   }
-  .case--card {
-    margin: 15px 0;
+  .case--card--stack-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .case--card-btn {
+    width: 100%;
   }
   .stack-wrapper {
     -ms-grid-columns: 1fr;
@@ -933,8 +1011,8 @@ input#file:after {
     row-gap: 30px;
   }
   .stack--cards {
-    -ms-grid-columns: 115px 10px 115px 10px 115px;
-    grid-template-columns: repeat(3, 115px);
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(3, 1fr);
     -webkit-column-gap: 10px;
     -moz-column-gap: 10px;
     column-gap: 10px;
@@ -949,9 +1027,13 @@ input#file:after {
     -ms-flex-align: center;
     align-items: center;
   }
-  .article-card {
+  .article-card, .case--card {
     margin: 15px 0;
-  }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
   .contact--wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1109,4 +1191,7 @@ input#file:after {
 .header--content {
   margin-top: 90px;
 }
+.footer-wrapper div {margin-bottom: 20px;}
+
+.footer-wrapper {padding-bottom: 0;}
 }

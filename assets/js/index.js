@@ -15,10 +15,18 @@ document.addEventListener('click', function(e){
 window.addEventListener("scroll", dealWithScrolling, false);
 function dealWithScrolling(e) {
     let y = window.scrollY
-    if(y > 0){
+    if(y > 100){
         document.querySelector('.navbar').classList.add('fixed') 
     } else {
         document.querySelector('.navbar').classList.remove('fixed')
     }
       
 }
+
+
+const langList = document.querySelector('.lang--dropdown-list')
+const lang = document.querySelector('.lang')
+lang.addEventListener("click", () => {
+  langList.classList.toggle("show");
+  lang.classList.toggle("show");
+}, {passive: true});
