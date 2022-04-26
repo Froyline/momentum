@@ -963,6 +963,11 @@ input#file:after {
 .divider {
   border-bottom: 0.5px solid var(--DimGrey);
 }
+@media (min-width:768px){
+  .glider-contain{
+    display: none;
+  }
+}
 @media (max-width:768px) {
   .header {
     background: url(/assets/img/main-mob-bg.png);
@@ -984,7 +989,8 @@ input#file:after {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 20px
+    row-gap: 20px;
+    display: none;
   }
   .clients--card {
     width: 100%;

@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function(event) {
 const burger = document.querySelector('.hamburger');
 const menu = document.querySelector('.navbar--menu-mobile')
 burger.addEventListener('click', function(e){
@@ -23,10 +24,18 @@ function dealWithScrolling(e) {
       
 }
 
-
 const langList = document.querySelector('.lang--dropdown-list')
 const lang = document.querySelector('.lang')
 lang.addEventListener("click", () => {
   langList.classList.toggle("show");
   lang.classList.toggle("show");
 }, {passive: true});
+
+let glider = new Glider(document.getElementById('glider'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: '#dots',
+    draggable: true,
+  });
+
+});
